@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematika Dasar untuk Informatika - Tugas MatDas</title>
+    <meta name="description" content="Pelajari bagaimana konsep matematika dasar seperti logika dan fungsi diimplementasikan dalam menyelesaikan permasalahan algoritma dan struktur data di bidang informatika">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <h1>🎓 Matematika Dasar untuk Informatika</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main id="mainContent">
+            <!-- Home Section -->
+            <section id="homeSection" class="home-section">
+                <div class="hero">
+                    <h2>📊 Penerapan Konsep Matematika dalam Algoritma & Struktur Data</h2>
+                    <p>Eksplorasi interaktif bagaimana konsep matematika dasar diterapkan dalam pemrograman dan struktur data</p>
+                </div>
+
+                <div class="card-grid">
+                    <div class="card" onclick="showSection('algoritma')">
+                        <div class="card-icon">🔄</div>
+                        <h3>Algoritma</h3>
+                        <p>Pengertian dan contoh algoritma pada konsep matematika dasar</p>
+                    </div>
+
+                    <div class="card" onclick="showSection('struktur-data')">
+                        <div class="card-icon">📚</div>
+                        <h3>Struktur Data</h3>
+                        <p>Implementasi struktur data menggunakan konsep matematika diskrit</p>
+                    </div>
+
+                    <div class="card" onclick="showSection('logika')">
+                        <div class="card-icon">🧮</div>
+                        <h3>Logika Matematika</h3>
+                        <p>Pernyataan logika, tabel kebenaran, dan penerapannya dalam programming</p>
+                    </div>
+
+                    <div class="card" onclick="showSection('fungsi')">
+                        <div class="card-icon">📈</div>
+                        <h3>Fungsi & Relasi</h3>
+                        <p>Konsep fungsi matematika dalam implementasi kode program</p>
+                    </div>
+
+                    <div class="card" onclick="showSection('program')">
+                        <div class="card-icon">💻</div>
+                        <h3>Program Interaktif</h3>
+                        <p>Coba sendiri implementasi algoritma dan struktur data</p>
+                    </div>
+                </div>
+
+                <button class="credit-button" onclick="openCreditModal()">👤 Pembuat</button>
+            </section>
+
+            <!-- Algoritma Section -->
+            <section id="algoritmaSection" class="content-section hidden">
+                <div class="content-card">
+                    <button class="back-button" onclick="showSection('home')">← Kembali</button>
+                    <h2>🔄 Algoritma - Penerapan Logika Matematika</h2>
+                    
+                    <div class="subsection">
+                        <h3>Pengertian</h3>
+                        <p><strong>Konsep Matematika:</strong> Logika pembagian interval dan perbandingan</p>
+                        <p>Dalam matematika dasar, algoritma adalah serangkaian langkah yang jelas, logis, dan berurutan untuk menyelesaikan suatu masalah atau perhitungan. Contohnya adalah prosedur penjumlahan atau pengurangan bersusun yang mengikuti urutan langkah pasti untuk menghasilkan jawaban yang benar, seperti melakukan operasi dari kolom nilai tempat terkecil terlebih dahulu.</p>
+
+                        <p>
+                        <strong>Contoh Algoritma dalam Matematika Dasar</strong> 
+                        Penjumlahan Bersusun: Ketika menjumlahkan dua bilangan, Anda memulai dengan menjumlahkan angka di kolom satuan, lalu puluhan, dan seterusnya, memastikan langkah-langkahnya dilakukan secara berurutan. 
+                        Perkalian Polinomial (FOIL): Untuk mengalikan dua ekspresi polinomial, seperti (4x + 6)(x + 2), algoritma FOIL memberikan urutan yang pasti: Kalikan Suku Pertama, Suku Luar, Suku Dalam, lalu Suku Terakhir (First, Outside, Inside, Last) untuk mendapatkan hasil yang benar. 
+                        Algoritma Panjang Pembagian: Algoritma ini menyediakan serangkaian langkah terperinci untuk membagi bilangan yang besar, memastikan setiap langkah dikerjakan secara sistematis untuk mendapatkan hasil yang tepat</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Struktur Data Section -->
+            <section id="struktur-dataSection" class="content-section hidden">
+                <div class="content-card">
+                    <button class="back-button" onclick="showSection('home')">← Kembali</button>
+                    <h2>📚 Struktur Data - Implementasi Konsep Matematika</h2>
+                    
+                    <div class="subsection">
+                        <h3>Pengertian</h3>
+                        <p><strong>Konsep Matematika:</strong> Dalam matematika dasar dan pemrograman, struktur data adalah cara mengatur dan menyimpan data agar dapat digunakan secara efisien. </p>
+                        <p>~</p>
+                        <p>Contoh Struktur Data dalam Matematika Dasar dan Penerapannya
+                            Berikut adalah contoh struktur data yang umum digunakan:</p>
+                    </div>
+                    <div class="subsection">
+                        <h3>Contoh "Array"</h3>
+                        <p><strong>Konsep : </strong> Kumpulan elemen data yang berukuran tetap dan disimpan di lokasi memori yang berdekatan.</p>
+                        <p><strong>Contoh :</strong></p>
+                        <p>Daftar nilai ujian matematika siswa: [85, 92, 78, 88, 90]. </p>
+                        <p>Menyimpan koordinat titik dalam grafik kartesius, misal (x1, y1), (x2, y2). </p>
+                    </div>
+                    <div class="subsection">
+                        <h3>Contoh "Graph"</h3>
+                        <p><strong>Konsep : </strong> Struktur data non-linear yang terdiri dari simpul (vertex) dan sisi (edge) yang menghubungkan simpul-simpul tersebut, menggambarkan hubungan antar data. </p>
+                        <p><strong>Contoh :</strong></p>
+                        <p>Peta jaringan jalan antar kota, di mana setiap kota adalah simpul dan jalan adalah sisi.  </p>
+                        <p>Jaringan sosial, di mana orang adalah simpul dan hubungan pertemanan adalah sisi. </p>
+                    </div>
+                    <div class="subsection">
+                        <h3>Contoh "Tabel"</h3>
+                        <p><strong>Konsep : </strong> Pengaturan data dalam baris dan kolom untuk memudahkan perbandingan dan analisis. </p>
+                        <p><strong>Contoh :</strong></p>
+                        <p>Tabel frekuensi nilai matematika siswa, yang menunjukkan berapa kali setiap nilai muncul.  </p>
+                        <p>Tabel nilai konversi suhu:
+                        <td>Celcius 0°C menjadi </td>
+                        <td> Fahrenheit 32°F</td>
+                        </p>
+                    </div>
+                    <div class="subsection">
+                        <h3>Contoh "Tree"</h3>
+                        <p><strong>Konsep : </strong> Struktur data non-linear dan berhierarki, di mana setiap elemen (disebut node) terhubung dengan node induk dan anak-anaknya. </p>
+                        <p><strong>Contoh :</strong></p>
+                        <p>Representasi silsilah keluarga yang menunjukkan hubungan antara orang tua dan anak. </p>
+                        <p>Struktur folder dalam sistem komputer, di mana folder induk berisi folder-folder anak.  </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Logika Section -->
+            <section id="logikaSection" class="content-section hidden">
+                <div class="content-card">
+                    <button class="back-button" onclick="showSection('home')">← Kembali</button>
+                    <h2>🧮 Logika Matematika dalam Programming</h2>
+                    
+                    <div class="subsection">
+                        <h3>1. Operator Logika</h3>
+                        <table class="truth-table">
+                            <thead>
+                                <tr>
+                                    <th>A</th>
+                                    <th>B</th>
+                                    <th>A AND B</th>
+                                    <th>A OR B</th>
+                                    <th>NOT A</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>False</td>
+                                </tr>
+                                <tr>
+                                    <td>True</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                    <td>True</td>
+                                    <td>False</td>
+                                </tr>
+                                <tr>
+                                    <td>False</td>
+                                    <td>True</td>
+                                    <td>False</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>False</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                    <td>True</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>Pengertian</h3>
+                        <p><strong>Logika matematika</strong> pada konsep matematika dasar adalah cabang ilmu matematika yang mempelajari cara berpikir secara sistematis dan rasional untuk menentukan kebenaran dari suatu pernyataan dan penarikan kesimpulan. Dalam logika matematika, suatu pernyataan disebut proposisi yang hanya memiliki nilai kebenaran benar atau salah, tidak bisa keduanya sekaligus.</p>
+
+                        <p><strong>Logika matematika</strong>  melibatkan berbagai jenis operasi logika seperti negasi (ingkaran), konjungsi (dan), disjungsi (atau), implikasi (jika..., maka...), dan biimplikasi (jika dan hanya jika). Selain itu, penarikan kesimpulan dalam logika matematika dilakukan dengan aturan-aturan deduktif, misalnya silogisme, modus ponens, dan modus tollens, yang memastikan kesimpulan yang diambil valid jika premisnya benar.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fungsi Section -->
+            <section id="fungsiSection" class="content-section hidden">
+                <div class="content-card">
+                    <button class="back-button" onclick="showSection('home')">← Kembali</button>
+                    <h2>📈 Fungsi & Relasi dalam Programming</h2>
+                    
+                    <div class="subsection">
+                        <h3>1. Fungsi Matematika</h3>
+                        <p>Fungsi pada matematika dasar adalah sebuah relasi yang menghubungkan setiap anggota dari satu himpunan yang disebut domain dengan tepat satu anggota dari himpunan lain yang disebut kodomain. Fungsi ini biasanya dilambangkan dengan y=f(x), yang berarti setiap nilai x dari domain dipetakan ke satu nilai y di kodomain. Fungsi merupakan konsep dasar dalam matematika yang digunakan untuk menggambarkan hubungan antara dua variabel, misalnya hubungan antara input dan output pada suatu aturan tertentu.
+                            Sifat-sifat fungsi dasar yang perlu diketahui meliputi:,</p>
+                        <p>~</p>
+	                    <p>* Fungsi injektif (satu-satu), di mana setiap elemen domain dipetakan ke elemen kodomain yang berbeda.</p>
+	                    <p>* Fungsi surjektif (ke), yaitu fungsi yang mencakup seluruh elemen kodomain.</p>
+	                    <p>* Fungsi bijektif, yaitu fungsi yang sekaligus injektif dan surjektif, dengan setiap elemen domain dipetakan ke elemen kodomain yang unik dan semua elemen kodomain terpakai.</p>
+                        <p>~</p>
+                        <p>Fungsi bisa dinyatakan dengan berbagai cara, seperti himpunan pasangan terurut, diagram panah, rumus, atau grafik. Contoh sederhana fungsi adalah yang memetakan angka ke nilai dua kali lipatnya, seperti f(x)=2x
+                        </p>               
+                    </div>
+                </div>
+            </section>
+
+            <!-- Program Interaktif Section -->
+            <section id="programSection" class="content-section hidden">
+                <div class="content-card">
+                    <button class="back-button" onclick="showSection('home')">← Kembali</button>
+                    <h2>💻 Program Interaktif - Algoritma & Struktur Data</h2>
+                    
+                    <div class="program-tabs">
+                        <button class="tab-button active" onclick="showProgram('binary-search')">Binary Search</button>
+                        <button class="tab-button" onclick="showProgram('bubble-sort')">Bubble Sort</button>
+                        <button class="tab-button" onclick="showProgram('stack')">Stack Operations</button>
+                        <button class="tab-button" onclick="showProgram('factorial')">Factorial (Rekursif)</button>
+                    </div>
+
+                    <!-- Binary Search Demo -->
+                    <div id="binarySearchDemo" class="program-demo">
+                        <h3>🔍 Binary Search Algorithm</h3>
+                        <p><strong>Konsep Matematika:</strong> Logika perbandingan dan fungsi pembagian</p>
+                        <p><strong>Array Terurut:</strong> [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]</p>
+                        
+                        <div class="input-group">
+                            <input type="number" id="binarySearchInput" placeholder="Masukkan angka yang dicari" min="1" max="20">
+                            <button onclick="performBinarySearch()">Cari</button>
+                        </div>
+                        
+                        <div id="binarySearchResult" class="result-box"></div>
+                        <div id="binarySearchSteps" class="steps-box"></div>
+                    </div>
+
+                    <!-- Bubble Sort Demo -->
+                    <div id="bubbleSortDemo" class="program-demo hidden">
+                        <h3>🔄 Bubble Sort Algorithm</h3>
+                        <p><strong>Konsep Matematika:</strong> Logika perbandingan dan fungsi iterasi</p>
+                        
+                        <div class="input-group">
+                            <input type="text" id="bubbleSortInput" placeholder="Masukkan angka dipisah koma (contoh: 64,34,25,12,22)">
+                            <button onclick="performBubbleSort()">Urutkan</button>
+                        </div>
+                        
+                        <div id="bubbleSortResult" class="result-box"></div>
+                        <div id="bubbleSortSteps" class="steps-box"></div>
+                    </div>
+
+                    <!-- Stack Demo -->
+                    <div id="stackDemo" class="program-demo hidden">
+                        <h3>📚 Stack Data Structure</h3>
+                        <p><strong>Konsep Matematika:</strong> Fungsi LIFO (Last In First Out) dan operasi linear</p>
+                        
+                        <div class="input-group">
+                            <input type="text" id="stackInput" placeholder="Masukkan elemen">
+                            <button onclick="pushToStack()">Push</button>
+                            <button onclick="popFromStack()" class="outline-btn">Pop</button>
+                            <button onclick="clearStack()" class="danger-btn">Clear</button>
+                        </div>
+                        
+                        <div class="stack-container">
+                            <p><strong>Stack (LIFO):</strong></p>
+                            <div id="stackDisplay" class="stack-display">
+                                <p class="empty-message">Stack kosong</p>
+                            </div>
+                        </div>
+                        
+                        <div id="stackInfo" class="result-box"></div>
+                    </div>
+
+                    <!-- Factorial Demo -->
+                    <div id="factorialDemo" class="program-demo hidden">
+                        <h3>🔢 Factorial Function (Rekursif)</h3>
+                        <p><strong>Konsep Matematika:</strong> Fungsi rekursif dan logika kondisional</p>
+                        
+                        <div class="input-group">
+                            <input type="number" id="factorialInput" placeholder="Masukkan angka (0-10)" min="0" max="10">
+                            <button onclick="calculateFactorial()">Hitung Faktorial</button>
+                        </div>
+                        
+                        <div id="factorialResult" class="result-box"></div>
+                        <div id="factorialSteps" class="steps-box"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Credit Modal -->
+        <div id="creditModal" class="modal hidden">
+            <div class="modal-content">
+                <button class="close-modal" onclick="closeCreditModal()">×</button>
+                <h2>👤 Informasi Pembuat</h2>
+                <div class="credit-info">
+                    <p><strong>Nama Anggota :</strong></p>
+                    <p><strong>#</strong> Rafif Abrar <strong>NIM : </strong>D1041251126</p>
+                    <p><strong>#</strong> Flavia Cesaria Vercans <strong>NIM : </strong>D1041251129</p>
+                    <p><strong>#</strong> Farhan Muhammad Rafi <strong>NIM : </strong>D1041251130</p>
+                    <p><strong>Mata Kuliah:</strong> Matematika Dasar</p>
+                    <p><strong>Universitas Tanjungpura</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
