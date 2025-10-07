@@ -108,27 +108,6 @@ main {
     font-size: 0.95rem;
 }
 
-/* Credit Button */
-.credit-button {
-    display: block;
-    margin: 2rem auto;
-    padding: 0.75rem 2rem;
-    background: var(--matcha-medium);
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px var(--shadow);
-}
-
-.credit-button:hover {
-    background: var(--matcha-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px var(--shadow);
-}
-
 /* Content Section */
 .content-section {
     animation: fadeIn 0.5s ease;
@@ -154,24 +133,6 @@ main {
     margin-bottom: 1rem;
 }
 
-/* Back Button */
-.back-button {
-    margin-bottom: 1.5rem;
-    padding: 0.6rem 1.5rem;
-    background: var(--matcha-medium);
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.back-button:hover {
-    background: var(--matcha-dark);
-    transform: translateX(-4px);
-}
-
 /* Subsection */
 .subsection {
     margin-bottom: 2.5rem;
@@ -179,22 +140,6 @@ main {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 0.75rem;
     border-left: 4px solid var(--matcha-medium);
-}
-
-/* Code Box */
-.code-box {
-    background: #2d2d2d;
-    color: #f8f8f2;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    margin: 1rem 0;
-    overflow-x: auto;
-}
-
-.code-box pre {
-    font-family: 'Courier New', monospace;
-    font-size: 0.9rem;
-    line-height: 1.5;
 }
 
 /* Truth Table */
@@ -352,141 +297,4 @@ main {
     font-size: 0.9rem;
     margin: 0.3rem 0;
     white-space: pre-wrap;
-}
-
-/* Stack Container */
-.stack-container {
-    margin: 1.5rem 0;
-}
-
-.stack-display {
-    background: rgba(0, 0, 0, 0.05);
-    border: 2px dashed var(--border-color);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    min-height: 200px;
-}
-
-.stack-item {
-    background: rgba(107, 155, 110, 0.2);
-    border: 2px solid var(--matcha-medium);
-    border-radius: 0.5rem;
-    padding: 0.75rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
-    animation: slideIn 0.3s ease;
-}
-
-.empty-message {
-    color: var(--warm-text);
-    font-style: italic;
-    opacity: 0.7;
-}
-
-/* Modal */
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    animation: fadeIn 0.3s ease;
-}
-
-.modal-content {
-    background: var(--cream);
-    padding: 2.5rem;
-    border-radius: 1rem;
-    max-width: 500px;
-    width: 90%;
-    position: relative;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-}
-
-.close-modal {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: var(--warm-text);
-    transition: transform 0.3s ease;
-}
-
-.close-modal:hover {
-    transform: rotate(90deg);
-}
-
-.credit-info p {
-    margin: 0.75rem 0;
-    font-size: 1.1rem;
-}
-
-/* Utility Classes */
-.hidden {
-    display: none !important;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(-10px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero h2 {
-        font-size: 1.4rem;
-    }
-
-    .card-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .content-card {
-        padding: 1.5rem;
-    }
-
-    .program-tabs {
-        flex-direction: column;
-    }
-
-    .tab-button {
-        width: 100%;
-    }
-
-    .input-group {
-        flex-direction: column;
-    }
-
-    .input-group input,
-    .input-group button {
-        width: 100%;
-    }
 }
